@@ -24,7 +24,6 @@ router.get('/:id', checkCarId, async (req, res) => {
 
 router.post(
     '/',
-    checkCarId,
     checkCarPayload,
     checkVinNumberValid,
     checkVinNumberUnique,
